@@ -1,0 +1,35 @@
+body, html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    width: 1440px;
+    height: 122px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navbar ul {
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar li:hover {
+    cursor: pointer;
+}
