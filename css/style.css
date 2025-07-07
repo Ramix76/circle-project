@@ -1,0 +1,206 @@
+:root {
+  --Primary: #072ac8;
+  --PrimaryLight: #a2d6f9;
+  --PrimaryLighter: #d1edff;
+  --SecondaryLight: #fce300;
+  --SecondaryDark: #ffc600;
+  --NeutralLight: #f4f6fc;
+  --NeutralMedium: #6b708d;
+  --NeutralDark: #292e47;
+  --Wrong: #b33a3a;
+  --Right: #28a428;
+  --White: #fff;
+  --Black: #000;
+  --Background: #f2f4fc;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--Background);
+  color: var(--NeutralDark);
+}
+
+/* NAVBAR SECTION */
+.navbar {
+  max-width: 1020px;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.nav-left a {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--Primary);
+  text-decoration: none;
+  border: 2px solid var(--Primary);
+  border-radius: 8px;
+}
+
+.nav-center {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: var(--Primary);
+  font-weight: 500;
+}
+
+.nav-center a:hover {
+  text-decoration: underline;
+}
+
+.nav-right .btn-contact {
+  background-color: var(--Primary);
+  color: var(--White);
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.nav-right .btn-contact:hover {
+  color: var(--SecondaryLight);
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 24px;
+  max-width: 1020px;
+  margin: 0 auto;
+  gap: 2rem;
+  position: relative;
+  overflow: visible;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  color: var(--NeutralDark);
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: var(--NeutralMedium);
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.hero-buttons a {
+  margin-right: 16px;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: var(--Primary);
+  color: var(--White);
+}
+
+.btn-primary:hover {
+  color: var(--SecondaryLight);
+}
+
+.btn-secondary {
+  color: var(--NeutralMedium);
+}
+
+.btn-secondary:hover {
+  text-decoration: underline;
+  color: var(--Primary);
+}
+
+
+/* HERO IMAGES */
+.hero-image {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person {
+  width: 360px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+  padding: 16px;
+}
+
+.floating-card {
+  position: absolute;
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+  width: 200px;
+  z-index: 2;
+}
+
+.floating-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
+
+.top-card {
+  top: -10px;
+  left: 30px;
+}
+
+.bottom-card {
+  bottom: -40px;
+  right: 30px;
+}
+
+
+/* BRANDS SECTION */
+.brands {
+  background-color: var(--NeutralLight);
+  padding: 60px 24px;
+}
+
+.brands-container {
+  max-width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.brands-container a img {
+  max-height: 32px;
+  opacity: 0.7;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.brands-container a:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
