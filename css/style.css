@@ -587,3 +587,141 @@ html {
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+/* RESPONSIVE */
+/* Responsive: Móviles (380px a 760px) */
+@media (max-width: 760px) {
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--Primary);
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .nav-center {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--Background);
+    padding: 16px;
+    border-top: 1px solid #ddd;
+  }
+
+  #nav-menu {
+  display: none;
+  }
+
+  #nav-menu.show {
+    display: flex;
+  }
+
+  .nav-center a {
+    padding: 12px 0;
+    font-size: 18px;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 16px;
+  }
+
+  .hero-image,
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-buttons a {
+    display: block;
+    margin: 8px auto;
+  }
+
+  .brands-container {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .project-container,
+  .services-container {
+    flex-direction: column;
+  }
+
+  .project,
+  .service {
+    width: 100%;
+  }
+
+  .testimonials .container {
+    padding: 0 16px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .questions-section h2 {
+    font-size: 32px;
+  }
+
+  .questions-section .subtitle {
+    font-size: 20px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    height: auto;
+    gap: 12px;
+  }
+
+  .btn-subscribe {
+    width: 100%;
+  }
+
+  .main-footer {
+    margin: 0;
+    padding: 40px 16px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 761px) {
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .questions-section h2 {
+    font-size: 44px;
+  }
+
+  .questions-section .subtitle {
+    font-size: 28px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
