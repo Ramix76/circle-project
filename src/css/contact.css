@@ -73,6 +73,91 @@ html {
 }
 
 
+/* -----------------------FORM---------------------- */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px - 300px); 
+  padding: 40px 20px;
+}
+
+.contact-form-container {
+    padding: 30px;
+    width: 100%;
+    max-width: 1150px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: left;
+    color: var(--NeutralDark, #333);
+    margin-bottom: 25px;
+    font-size: 60px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--NeutralMedium);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 22px;
+    background-color: rgba(107, 112, 141, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 49px;
+    background-color: rgba(107, 112, 141, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a6bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #3a56d4;
+}
+
+
 /* -----------------------FOOTER---------------------- */
 .main-footer {
   color: var(--Black);
@@ -160,7 +245,7 @@ html {
 
   #nav-menu {
     position: absolute;
-    top: 100%; /* justo debajo de navbar */
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -183,6 +268,14 @@ html {
   }
 
   .nav-right {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
     display: none;
   }
 
@@ -211,6 +304,16 @@ html {
 
 /* -----------------------RESPONSIVE---------------------- */
 /*                     (over 760px) */
+@media (min-width: 761px) {
   .hamburger {
     display: none;
   }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+}

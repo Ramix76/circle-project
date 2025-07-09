@@ -59,7 +59,7 @@ html {
   text-decoration: underline;
 }
 
-.nav-right .btn-contact {
+/* .nav-right .btn-contact {
   background-color: var(--Primary);
   color: var(--White);
   padding: 10px 16px;
@@ -70,8 +70,28 @@ html {
 
 .nav-right .btn-contact:hover {
   color: var(--SecondaryLight);
+} */
+
+.btn-contact {
+  background-color: var(--Primary);
+  color: var(--White);
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
+.btn-contact:hover {
+  color: var(--SecondaryLight);
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
 
 /* -----------------------HERO SECTION---------------------- */
 .hero {
@@ -682,6 +702,14 @@ html {
     display: none;
   }
 
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
   .hero {
     flex-direction: column;
     padding: 40px 16px;
@@ -783,5 +811,13 @@ html {
 
   .hamburger {
     display: none;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
   }
 }

@@ -375,6 +375,14 @@ html {
     display: none;
   }
 
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
   .project-container {
     flex-direction: column;
   }
@@ -433,5 +441,13 @@ html {
 @media (min-width: 761px) {
   .hamburger {
     display: none;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
   }
 }
