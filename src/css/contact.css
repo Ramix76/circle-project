@@ -51,12 +51,13 @@ html {
 
 .nav-center a {
   text-decoration: none;
-  color: var(--Primary);
+  color: var(--NeutralMedium);
   font-weight: 500;
 }
 
 .nav-center a:hover {
   text-decoration: underline;
+  color: var(--Primary);
 }
 
 .nav-right .btn-contact {
@@ -125,6 +126,15 @@ h1 {
     border-radius: 4px;
     font-size: 16px;
     box-sizing: border-box;
+}
+
+.form-group input,
+.form-group textarea {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -5.5 65 65'><defs><radialGradient id='grad1' cx='50%25' cy='50%25' r='50%25'><stop offset='0%25' stop-color='%23FFFFFF'/><stop offset='100%25' stop-color='%23FF6600'/></radialGradient></defs><path d='M20.1,40.3 C18.7,39.9 17.3,39.4 16,38.8 C7.5,35.2 1.9,28.8 1.9,21.5 C1.9,10.2 15.6,1 32.4,1 C49.2,1 62.9,10.2 62.9,21.5 C62.9,32.8 49.2,42 32.4,42 C31.6,42 30.7,42 29.9,41.9 L29.9,41.9 L10,51 L16,38.9' stroke='%23FF6600' stroke-width='2' fill='url(%23grad1)'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 5px top 5px;
+  background-size: 15px 15px;
+  padding-right: 40px;
 }
 
 .form-row {
@@ -230,6 +240,31 @@ textarea.input-error {
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+
+/* -----------------------TOOLTIP---------------------- */
+.tooltip {
+  position: fixed;
+  background-color: #ffc600;
+  color: #292e47;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  pointer-events: none;
+  z-index: 1000;
+  white-space: nowrap;
+  transform: translate(8px, 8px); /* offset from cursor */
+  transition: opacity 0.2s ease;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.tooltip.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 
