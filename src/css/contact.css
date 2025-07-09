@@ -157,6 +157,27 @@ h1 {
     background-color: #3a56d4;
 }
 
+.errorForm {
+  color: var(--Wrong, #b33a3a);
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+input.input-error,
+textarea.input-error {
+  border: 1px solid var(--Wrong, #b33a3a);
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+.input-correct {
+  background-image: linear-gradient(to right, rgb(126, 211, 245), rgb(216, 235, 245));
+  background-position: right top;
+  background-repeat: no-repeat;
+}
 
 /* -----------------------FOOTER---------------------- */
 .main-footer {

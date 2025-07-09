@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
+
     <header>
       <nav class="navbar">
         <div class="nav-left">
@@ -29,11 +30,12 @@
         </div>
       </nav>
     </header>
+
     <main>
       <div class="contact-form-container">
         <h1>Contact Us</h1>
 
-        <form class="contact-form">
+        <form class="contact-form" novalidate>
           <div class="form-group">
             <label for="fullname">Full Name</label>
             <input
@@ -41,6 +43,9 @@
               id="fullname"
               placeholder="Enter your full name"
             />
+            <p id="errorName" class="errorForm hidden">
+              Please, complete the field NAME with your name
+            </p>
           </div>
 
           <div class="form-row">
@@ -51,7 +56,11 @@
                 id="email"
                 placeholder="Enter your email address"
               />
+              <p id="errorEmail" class="errorForm hidden">
+                Please enter a valid email address
+              </p>
             </div>
+
             <div class="form-group">
               <label for="phone">Phone</label>
               <input
@@ -59,6 +68,9 @@
                 id="phone"
                 placeholder="Enter your phone number"
               />
+              <p id="errorPhone" class="errorForm hidden">
+                Please enter your phone number
+              </p>
             </div>
           </div>
 
@@ -68,12 +80,16 @@
               id="message"
               placeholder="Write your message here..."
             ></textarea>
+            <p id="errorMessage" class="errorForm hidden">
+              Please write a message
+            </p>
           </div>
 
           <button type="submit" class="submit-btn">Submit</button>
         </form>
       </div>
     </main>
+
     <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-info">
@@ -97,6 +113,8 @@
         </nav>
       </div>
     </footer>
+
     <script src="../js/hamburg.js"></script>
+    <script src="../js/contacts.js"></script>
   </body>
 </html>
