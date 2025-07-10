@@ -46,4 +46,4 @@ README.md # Documentación del proyecto
 
 ## Deploy en Netlify
 
-2. [ enlace directo ](https://dreamy-paprenjak-749ad4.netlify.app/)
+2. [ Enlace al Circle Project ](https://dreamy-paprenjak-749ad4.netlify.app/)
