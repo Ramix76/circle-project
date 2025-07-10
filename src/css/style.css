@@ -59,19 +59,6 @@ html {
   text-decoration: underline;
 }
 
-/* .nav-right .btn-contact {
-  background-color: var(--Primary);
-  color: var(--White);
-  padding: 10px 16px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.nav-right .btn-contact:hover {
-  color: var(--SecondaryLight);
-} */
-
 .btn-contact {
   background-color: var(--Primary);
   color: var(--White);
@@ -439,8 +426,8 @@ html {
 }
 
 .service img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
   margin-bottom: 20px;
   background-color: var(--PrimaryLighter);
