@@ -40,9 +40,10 @@ README.md # Documentación del proyecto
 ## Instalación y Uso
 
 1. Clona el repositorio:
-   git clone https://github.com/tu-usuario/tu-repo.git
+   git clone https://github.com/Ramix76/circle-project
 
 ---
 
-## Deploy
+## Deploy en Netlify
 
+2. [ enlace directo ](https://dreamy-paprenjak-749ad4.netlify.app/)
