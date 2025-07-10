@@ -98,6 +98,7 @@ h1 {
 }
 
 .form-group {
+    position: relative;
     margin-bottom: 20px;
 }
 
@@ -130,10 +131,7 @@ h1 {
 
 .form-group input,
 .form-group textarea {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -5.5 65 65'><defs><radialGradient id='grad1' cx='50%25' cy='50%25' r='50%25'><stop offset='0%25' stop-color='%23FFFFFF'/><stop offset='100%25' stop-color='%23FF6600'/></radialGradient></defs><path d='M20.1,40.3 C18.7,39.9 17.3,39.4 16,38.8 C7.5,35.2 1.9,28.8 1.9,21.5 C1.9,10.2 15.6,1 32.4,1 C49.2,1 62.9,10.2 62.9,21.5 C62.9,32.8 49.2,42 32.4,42 C31.6,42 30.7,42 29.9,41.9 L29.9,41.9 L10,51 L16,38.9' stroke='%23FF6600' stroke-width='2' fill='url(%23grad1)'/></svg>");
-  background-repeat: no-repeat;
-  background-position: right 5px top 5px;
-  background-size: 15px 15px;
+
   padding-right: 40px;
 }
 
@@ -184,7 +182,9 @@ textarea.input-error {
 }
 
 .input-correct {
-  background-image: linear-gradient(to right, rgb(126, 211, 245), rgb(216, 235, 245));
+  background-image: linear-gradient(to right, rgb(126, 211, 245), rgb(216, 235, 245)) !important;
+  background-color: transparent;
+  border: 1px solid var(--Right);
   background-position: right top;
   background-repeat: no-repeat;
 }
@@ -244,27 +244,85 @@ textarea.input-error {
 
 
 /* -----------------------TOOLTIP---------------------- */
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.chat-icon {
+  position: absolute;
+  top: 18%;
+  right: 6px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -5.5 65 65'><defs><radialGradient id='grad1' cx='50%25' cy='50%25' r='50%25'><stop offset='0%25' stop-color='%23FFFFFF'/><stop offset='100%25' stop-color='%23FF6600'/></radialGradient></defs><path d='M20.1,40.3 C18.7,39.9 17.3,39.4 16,38.8 C7.5,35.2 1.9,28.8 1.9,21.5 C1.9,10.2 15.6,1 32.4,1 C49.2,1 62.9,10.2 62.9,21.5 C62.9,32.8 49.2,42 32.4,42 C31.6,42 30.7,42 29.9,41.9 L29.9,41.9 L10,51 L16,38.9' stroke='%23FF6600' stroke-width='2' fill='url(%23grad1)'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px 15px;
+}
+
 .tooltip {
-  position: fixed;
-  background-color: #ffc600;
-  color: #292e47;
-  font-size: 12px;
+  position: absolute;
+  background-color: rgba(50, 50, 50, 0.9);
+  color: #fff;
   padding: 6px 10px;
   border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  pointer-events: none;
+  font-size: 0.9rem;
   z-index: 1000;
-  white-space: nowrap;
-  transform: translate(8px, 8px); /* offset from cursor */
-  transition: opacity 0.2s ease;
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .tooltip.hidden {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
+}
+
+.input-correct {
+  background: linear-gradient(to right, rgb(126, 211, 245), rgb(216, 235, 245));
+  border: 1px solid var(--Right);
+}
+
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.modal-content h2 {
+    color: var(--Primary);
+}
+
+.hidden {
+  display: none;
+}
+
+#closeModalBtn {
+  margin-top: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
 }
 
 
@@ -333,6 +391,10 @@ textarea.input-error {
 
   .desktop-only {
     display: none;
+  }
+
+  .form-row {
+    flex-direction: column;
   }
 
   .main-footer {

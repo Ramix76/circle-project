@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
-
     <header>
       <nav class="navbar">
         <div class="nav-left">
@@ -36,50 +35,78 @@
         <h1>Contact Us</h1>
 
         <form class="contact-form" novalidate>
+          <!-- Full Name -->
           <div class="form-group">
             <label for="fullname">Full Name</label>
-            <input
-              type="text"
-              id="fullname"
-              placeholder="Enter your full name"
-            />
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Enter your full name"
+              />
+              <span
+                class="chat-icon"
+                data-tooltip="Please enter your full name."
+              ></span>
+            </div>
             <p id="errorName" class="errorForm hidden">
               Please, complete the field NAME with your name
             </p>
           </div>
 
+          <!-- Email -->
           <div class="form-row">
             <div class="form-group">
               <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter your email address"
-              />
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email address"
+                />
+                <span
+                  class="chat-icon"
+                  data-tooltip="Please enter a valid email."
+                ></span>
+              </div>
               <p id="errorEmail" class="errorForm hidden">
                 Please enter a valid email address
               </p>
             </div>
 
+            <!-- Phone -->
             <div class="form-group">
               <label for="phone">Phone</label>
-              <input
-                type="tel"
-                id="phone"
-                placeholder="Enter your phone number"
-              />
+              <div class="input-wrapper">
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                />
+                <span
+                  class="chat-icon"
+                  data-tooltip="Please enter your phone number."
+                ></span>
+              </div>
               <p id="errorPhone" class="errorForm hidden">
                 Please enter your phone number
               </p>
             </div>
           </div>
 
+          <!-- Message -->
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea
-              id="message"
-              placeholder="Write your message here..."
-            ></textarea>
+            <div class="input-wrapper">
+              <textarea
+                id="message"
+                placeholder="Write your message here..."
+              ></textarea>
+              <span
+                class="chat-icon"
+                data-tooltip="Please enter a message."
+              ></span>
+            </div>
             <p id="errorMessage" class="errorForm hidden">
               Please write a message
             </p>
@@ -114,9 +141,19 @@
       </div>
     </footer>
 
+    <div id="successModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Circle Agency</h2>
+        <p>Thank you! Your form has been sent successfully!!</p>
+        <button id="closeModalBtn">Close</button>
+      </div>
+    </div>
+
     <script src="../js/hamburg.js"></script>
     <script src="../js/contacts.js"></script>
     <script src="../js/tooltip.js"></script>
-    <div id="floatingTooltip" class="tooltip hidden">Please fill in this field.</div>
+    <div id="floatingTooltip" class="tooltip hidden">
+      Please fill in this field.
+    </div>
   </body>
 </html>
