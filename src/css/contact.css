@@ -3,7 +3,6 @@
   --PrimaryLight: #a2d6f9;
   --PrimaryLighter: #d1edff;
   --SecondaryLight: #fce300;
-  --SecondaryDark: #ffc600;
   --NeutralLight: #f4f6fc;
   --NeutralMedium: #6b708d;
   --NeutralDark: #292e47;
@@ -73,100 +72,86 @@ html {
   color: var(--SecondaryLight);
 }
 
-
 /* -----------------------FORM---------------------- */
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 100px - 300px); 
+  min-height: calc(100vh - 100px - 300px);
   padding: 40px 20px;
 }
 
 .contact-form-container {
-    padding: 30px;
-    width: 100%;
-    max-width: 1150px;
-    box-sizing: border-box;
+  padding: 30px;
+  width: 100%;
+  max-width: 1150px;
+  box-sizing: border-box;
 }
 
 h1 {
-    text-align: left;
-    color: var(--NeutralDark, #333);
-    margin-bottom: 25px;
-    font-size: 60px;
+  text-align: left;
+  color: var(--NeutralDark);
+  margin-bottom: 25px;
+  font-size: 60px;
 }
 
 .form-group {
-    position: relative;
-    margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: var(--NeutralMedium);
-}
-
-.form-group input {
-    width: 100%;
-    padding: 22px;
-    background-color: rgba(107, 112, 141, 0.1);
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-.form-group textarea {
-    width: 100%;
-    padding: 49px;
-    background-color: rgba(107, 112, 141, 0.1);
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--NeutralMedium);
 }
 
 .form-group input,
 .form-group textarea {
-
+  width: 100%;
+  padding: 22px;
   padding-right: 40px;
-}
-
-.form-row {
-    display: flex;
-    gap: 20px;
-}
-
-.form-row .form-group {
-    flex: 1;
+  background-color: rgba(107, 112, 141, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 .form-group textarea {
-    height: 120px;
-    resize: vertical;
+  height: 120px;
+  resize: vertical;
+  padding: 49px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
 }
 
 .submit-btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #4a6bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  width: 100%;
+  padding: 12px;
+  background-color: #4a6bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .submit-btn:hover {
-    background-color: #3a56d4;
+  background-color: #3a56d4;
 }
 
 .errorForm {
-  color: var(--Wrong, #b33a3a);
+  color: var(--Wrong);
   font-size: 14px;
   margin-top: 6px;
 }
@@ -175,15 +160,13 @@ h1 {
   display: none;
 }
 
-input.input-error,
-textarea.input-error {
-  border: 1px solid var(--Wrong, #b33a3a);
+.input-error {
+  border: 1px solid var(--Wrong);
   background-color: rgba(255, 0, 0, 0.05);
 }
 
 .input-correct {
-  background-image: linear-gradient(to right, rgb(126, 211, 245), rgb(216, 235, 245)) !important;
-  background-color: transparent;
+  background: linear-gradient(to right, rgb(126, 211, 245), rgb(216, 235, 245));
   border: 1px solid var(--Right);
   background-position: right top;
   background-repeat: no-repeat;
@@ -229,7 +212,7 @@ textarea.input-error {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, auto);
-  gap: 60px 60px;
+  gap: 60px;
   align-self: flex-start;
 }
 
@@ -241,7 +224,6 @@ textarea.input-error {
 .footer-links a:hover {
   text-decoration: underline;
 }
-
 
 /* -----------------------TOOLTIP---------------------- */
 .input-wrapper {
@@ -279,23 +261,10 @@ textarea.input-error {
   transition: opacity 0.2s ease-in-out;
 }
 
-.tooltip.hidden {
-  display: none;
-}
-
-.input-correct {
-  background: linear-gradient(to right, rgb(126, 211, 245), rgb(216, 235, 245));
-  border: 1px solid var(--Right);
-}
-
-
-/* MODAL */
+/* -----------------------MODAL---------------------- */
 .modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0,0,0,0.5);
   display: flex;
   justify-content: center;
@@ -311,12 +280,12 @@ textarea.input-error {
   max-width: 300px;
 }
 
-.modal-content h2 {
-    color: var(--Primary);
-}
-
 .hidden {
   display: none;
+}
+
+.modal-content h2 {
+  color: var(--Primary);
 }
 
 #closeModalBtn {
@@ -325,9 +294,7 @@ textarea.input-error {
   cursor: pointer;
 }
 
-
 /* -----------------------RESPONSIVE---------------------- */
-/*                     (380px to 760px) */
 @media (max-width: 760px) {
   .hamburger {
     display: block;
@@ -420,8 +387,6 @@ textarea.input-error {
   }
 }
 
-/* -----------------------RESPONSIVE---------------------- */
-/*                     (over 760px) */
 @media (min-width: 761px) {
   .hamburger {
     display: none;
