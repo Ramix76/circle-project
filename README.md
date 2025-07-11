@@ -15,13 +15,13 @@ Este proyecto consiste en construir y desplegar un sitio web completamente respo
 ---
 
 ## Estructura del Proyecto
-index.html # Página principal
-README.md # Documentación del proyecto
-/src/ # Carpeta raíz de los archivos fuente
-    /assets/ # Imágenes y otros recursos
-    /css/ # Archivos CSS (contacts, projects,style)
-    /js/ # Archivos JavaScript (contacts,hamburg,projects,scroll,tooltip)
-    /pages/ # Páginas adicionales (contacts, proyects)
+index.html          # Página principal  
+README.md           # Documentación del proyecto  
+/src/               # Carpeta raíz de los archivos fuente  
+├── /assets/        # Imágenes y otros recursos  
+├── /css/           # Archivos CSS (contacts, projects, style)  
+├── /js/            # Archivos JavaScript (contacts, hamburg, projects, scroll, tooltip)  
+└── /pages/         # Páginas adicionales (contacts, projects) 
 
 ---
 
