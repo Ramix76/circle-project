@@ -8,7 +8,8 @@ Este proyecto consiste en construir y desplegar un sitio web completamente respo
 ## Tecnologías Usadas
 - HTML5
 - CSS3 (Flexbox, Grid, Variables CSS)
-- NodeJs v22.17.0 (DOM Manipulation, Fetch API)
+- JavaScript Vanila (DOM Manipulation, Fetch API)
+- NodeJs v22.17.0
 - Git & GitHub para control de versiones
 - Netlify para despliegue online
 
@@ -74,7 +75,7 @@ This project involves building and deploying a fully responsive website for a fi
 
 - **HTML5**  
 - **CSS3** (Flexbox, Grid, CSS Variables)  
-- **JavaScript** (DOM Manipulation, Fetch API)  
+- **JavaScript Vanila** (DOM Manipulation, Fetch API)  
 - **Node.js** v22.17.0  
 - **Git & GitHub** for version control  
 - **Netlify** for online deployment  
