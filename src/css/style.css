@@ -433,7 +433,6 @@ body.dark-mode .hero-text p {
   margin: 0 auto;
   padding: 60px 20px;
   font-family: 'Arial', sans-serif;
-  
 }
 
 .services h2 {
@@ -462,15 +461,24 @@ body.dark-mode .hero-text p {
   padding: 20px;
 }
 
-.service img {
-  width: 35px;
-  height: 35px;
-  object-fit: contain;
-  margin-bottom: 20px;
+.icon-wrapper {
+  width: 55px;
+  height: 55px;
   background-color: var(--PrimaryLighter);
   border-radius: 50%;
   padding: 10px;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  display: block;
 }
 
 .service:hover {
@@ -496,13 +504,14 @@ body.dark-mode .hero-text p {
   text-decoration: none;
   font-weight: bold;
   margin-top: auto;
-  align-self: left;
+  align-self: flex-start;
   margin-bottom: 10px;
 }
 
 .services .learn-more:hover {
   text-decoration: underline;
 }
+
 
 
 /* -----------------------NEWSLETTER SECTION---------------------- */
