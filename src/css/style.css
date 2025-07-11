@@ -788,6 +788,13 @@ body.dark-mode .hero-text p {
     width: 100%;
   }
 
+  .services-container {
+    padding-right: 30px;
+    width: calc(100% - 12px);
+    margin-right: 12px;
+    box-sizing: border-box;
+  }
+
   .testimonials .container {
     padding: 0 16px;
   }
