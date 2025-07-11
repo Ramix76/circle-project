@@ -12,6 +12,12 @@
   --White: #fff;
   --Black: #000;
   --Background: #f2f4fc;
+
+    /* Dark mode overrides */
+  --dark-Background: #1a1d24;
+  --dark-TextPrimary: #f8f9fa;
+  --dark-TextSecondary: #adb5bd;
+  --dark-Card: #2c2f36;
 }
 
 body,
@@ -22,6 +28,60 @@ html {
   background-color: var(--Background);
   color: var(--NeutralDark);
 }
+
+
+/* -----------------------DARK-MODE---------------------- */
+#dark-mode-button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--Primary);
+  margin-right: 1rem;
+}
+
+#dark-mode-button:hover {
+  color: var(--SecondaryLight);
+}
+
+body.dark-mode {
+  background-color: var(--dark-Background);
+  color: var(--dark-TextPrimary);
+}
+
+body.dark-mode .navbar,
+body.dark-mode .project,
+body.dark-mode .service,
+body.dark-mode .testimonial-card,
+body.dark-mode .brands,
+body.dark-mode .footer-container {
+  background-color: var(--dark-Card);
+}
+
+body.dark-mode .nav-center a,
+body.dark-mode .project h3,
+body.dark-mode .service h3,
+body.dark-mode .hero-text h1 {
+  color: var(--dark-TextPrimary);
+}
+
+body.dark-mode .project p,
+body.dark-mode .service p,
+body.dark-mode .hero-text p {
+  color: var(--dark-TextSecondary);
+}
+
+/* #dark-mode-button {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: var(--NeutralMedium);
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 999;
+} */
 
 /* -----------------------NAVBAR SECTION---------------------- */
 .navbar {

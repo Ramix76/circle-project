@@ -16,3 +16,7 @@ navLinks.forEach(link => {
     navMenu.classList.remove('show');
   });
 });
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
