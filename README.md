@@ -1,5 +1,5 @@
 
-# 🌐 CIRCLE Project: Responsive Website for a Web Design Company
+## 🌐 CIRCLE Project: Responsive Website for a Web Design Company
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/68b8f3d2-1a11-4c3c-ae50-84c64ff6e790/deploy-status)](https://app.netlify.com/sites/dreamy-paprenjak-749ad4/deploys)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Ramix76/circle-project)
@@ -12,13 +12,13 @@
 
 ---
 
-## 📖 Description
+### 📖 Description
 
 This project involves building and deploying a fully responsive website for a fictional web design company. The website includes a home page, a projects page, and a contact page with validated forms. JavaScript was used to add dynamic interaction, and the site was deployed using Netlify.
 
 ---
 
-## 🚀 Technologies Used
+### 🚀 Technologies Used
 
 - **HTML5**  
 - **CSS3** (Flexbox, Grid, CSS Variables)  
@@ -29,7 +29,7 @@ This project involves building and deploying a fully responsive website for a fi
 
 ---
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 index.html          # Página principal  
 README.md           # Documentación del proyecto  
@@ -41,7 +41,7 @@ README.md           # Documentación del proyecto
 
 ---
 
-## ✨ Main Features
+### ✨ Main Features
 
 - Fully responsive design for mobile, tablet, and desktop.
 - Multi-page navigation.
@@ -55,12 +55,12 @@ README.md           # Documentación del proyecto
 
 ---
 
-## ⚙️ Installation & Usage
+### ⚙️ Installation & Usage
 
 1. Clone the repository:
    git clone https://github.com/Ramix76/circle-project
 
-## Deploy on Netlify
+### Deploy on Netlify
 
 2. [ Link to Circle Project ](https://dreamy-paprenjak-749ad4.netlify.app/)
 
@@ -70,14 +70,14 @@ README.md           # Documentación del proyecto
 
 
 
-# Proyecto CIRCLE: Sitio Web Responsivo para Empresa de Diseño Web
+## Proyecto CIRCLE: Sitio Web Responsivo para Empresa de Diseño Web
 
-## Descripción
+### Descripción
 Este proyecto consiste en construir y desplegar un sitio web completamente responsivo para una empresa ficticia de diseño web. El sitio incluye una página principal, una página de proyectos y una página de contacto con formulario validado. Se implementaron funcionalidades en JavaScript para interacción dinámica y se desplegó el sitio en Netlify.
 
 ---
 
-## Tecnologías Usadas
+### Tecnologías Usadas
 - HTML5
 - CSS3 (Flexbox, Grid, Variables CSS)
 - JavaScript Vanila (DOM Manipulation, Fetch API)
@@ -87,7 +87,7 @@ Este proyecto consiste en construir y desplegar un sitio web completamente respo
 
 ---
 
-## Estructura del Proyecto
+### Estructura del Proyecto
 index.html          # Página principal  
 README.md           # Documentación del proyecto  
 /src/               # Carpeta raíz de los archivos fuente  
@@ -98,7 +98,7 @@ README.md           # Documentación del proyecto
 
 ---
 
-## Características Principales
+### Características Principales
 - Diseño 100% responsivo adaptado a móviles, tablets y escritorio.
 - Navegación entre páginas.
 - Formulario de contacto con validación personalizada y alertas.
@@ -111,13 +111,13 @@ README.md           # Documentación del proyecto
 
 ---
 
-## Instalación y Uso
+### Instalación y Uso
 
 1. Clona el repositorio:
    git clone https://github.com/Ramix76/circle-project
 
 ---
 
-## Deploy en Netlify
+### Deploy en Netlify
 
 2. [ Enlace al Circle Project ](https://dreamy-paprenjak-749ad4.netlify.app/)
