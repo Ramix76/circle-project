@@ -8,7 +8,7 @@ Este proyecto consiste en construir y desplegar un sitio web completamente respo
 ## Tecnologías Usadas
 - HTML5
 - CSS3 (Flexbox, Grid, Variables CSS)
-- JavaScript (DOM Manipulation, Fetch API)
+- NodeJs v22.17.0 (DOM Manipulation, Fetch API)
 - Git & GitHub para control de versiones
 - Netlify para despliegue online
 
@@ -34,6 +34,7 @@ README.md           # Documentación del proyecto
 - Modal de confirmación en el formulario.
 - Menú responsive tipo hamburguesa.
 - Código limpio, modular y siguiendo principios KISS y DRY.
+- Se ha implementado un modo dark sencillo multipagina.
 
 ---
 
