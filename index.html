@@ -22,15 +22,14 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#services">Services</a></li>
           <li>
-            <a href="src/pages/contacts.html" class="mobile-only"
-              >Contact Us</a
-            >
+            <a href="src/pages/contacts.html" class="mobile-only">Contact Us</a>
           </li>
-          <!-- <button id="dark-mode-button" onclick="toggleDarkMode()">🌙</button> -->
         </ul>
 
         <div class="nav-right desktop-only">
-          <button id="dark-mode-button" onclick="toggleDarkMode()">🌙</button>
+          <button id="dark-mode-button" onclick="toggleDarkMode()">
+            <span id="dark-mode-icon">🌙</span>
+          </button>
           <a href="src/pages/contacts.html" class="btn-contact">Contact Us</a>
         </div>
       </nav>
@@ -221,7 +220,7 @@
 
           <form class="subscribe-form">
             <div class="input-group">
-              <input type="email" placeholder="Enter your email"/>
+              <input type="email" placeholder="Enter your email" />
               <button type="submit" class="btn-subscribe">Subscribe</button>
             </div>
           </form>
@@ -264,5 +263,6 @@
     </footer>
     <script src="src/js/hamburg.js"></script>
     <script src="src/js/scroll.js"></script>
+    <script src="src/js/dark-mode.js"></script>
   </body>
 </html>
