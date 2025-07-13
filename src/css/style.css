@@ -762,6 +762,32 @@ body.dark-mode .hero-text p {
     text-align: center;
   }
 
+  .hero-image {
+    position: relative;
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+
+  .floating-card {
+    width: 140px;
+  }
+
+  .top-card {
+    top: 40px;
+    left: 40px;
+  }
+
+  .bottom-card {
+    bottom: -40px;
+    right: 40px;
+  }
+
+  .person {
+    width: 280px;
+    height: auto;
+    padding: 0;
+  }
+
   .hero-buttons a {
     display: block;
     margin: 8px auto;
